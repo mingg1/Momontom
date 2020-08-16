@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  font-family: "Roboto Slab";
+  color: #ededed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.js-clock,
+.js-todoForm {
+  margin: auto;
+}
+.clock {
+  font-weight: 800;
+  font-size: 7rem;
+  margin: 10rem 0 0;
+}
+.name {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.form,
+.greetings {
+  display: none;
+  font-size: 2.6rem;
+}
+.js-todoList {
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.todo {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+.showing {
+  display: block;
+  margin: auto;
+}
+li button {
+  margin-left: 0.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.js-weather {
+  margin: 2rem auto 0;
+  font-size: 1.4rem;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: fadeIn 0.5s, linear;
+}
